@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/patientOnboardingForm/static/js/main.1fb31a18.chunk.js",
+    "main.js.map": "/patientOnboardingForm/static/js/main.1fb31a18.chunk.js.map",
+    "runtime-main.js": "/patientOnboardingForm/static/js/runtime-main.966272f5.js",
+    "runtime-main.js.map": "/patientOnboardingForm/static/js/runtime-main.966272f5.js.map",
+    "static/js/2.d1b0f548.chunk.js": "/patientOnboardingForm/static/js/2.d1b0f548.chunk.js",
+    "static/js/2.d1b0f548.chunk.js.map": "/patientOnboardingForm/static/js/2.d1b0f548.chunk.js.map",
+    "static/js/3.00f1f43b.chunk.js": "/patientOnboardingForm/static/js/3.00f1f43b.chunk.js",
+    "static/js/3.00f1f43b.chunk.js.map": "/patientOnboardingForm/static/js/3.00f1f43b.chunk.js.map",
+    "index.html": "/patientOnboardingForm/index.html",
+    "static/js/2.d1b0f548.chunk.js.LICENSE.txt": "/patientOnboardingForm/static/js/2.d1b0f548.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.966272f5.js",
+    "static/js/2.d1b0f548.chunk.js",
+    "static/js/main.1fb31a18.chunk.js"
+  ]
+}
