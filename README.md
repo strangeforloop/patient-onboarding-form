@@ -41,6 +41,11 @@ git clone https://github.com/strangeforloop/patientOnboardingForm.git
 npm install
 ```
 
+## Future Improvements
+1. Add unit and e2e testing
+2. Form validation for a better UX experience
+3. A better mobile experience
+
 <!-- LICENSE -->
 ## License
 
