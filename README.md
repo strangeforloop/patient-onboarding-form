@@ -11,7 +11,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 ![Parsley logo](./public/android-chrome-192x192.png)
 
 ### Built With
