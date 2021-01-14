@@ -8,7 +8,6 @@ const Conditions = ({ formData, setFormData, navigation }) => {
   console.log(example);
 
   const originalFiltersList = ['Cardiovascular', 'Gastrointestinal', 'Psychological', 'Other'];
-  // const [conditionsList, setConditionsList] = useState(conditions);
   const [filters, setFilters] = useState(originalFiltersList);
   const isCardiovascular = (condition) => { return condition.type === 'cardiovascular' };
   const isGastrointestinal = (condition) =>  { return condition.type === 'gastrointestinal' };
@@ -27,21 +26,14 @@ const Conditions = ({ formData, setFormData, navigation }) => {
     return (
     <CheckBox
       key={condition.condition }
-      // checked={condition.checked}
       label={`${condition.condition}`}
       onChange={() => {updateCheckbox(index, isChecked)}}
-      // name="conditions"
     />)
   };
 
   conditions.forEach(condition => {
     condition.checked = false;
   });
-
-  // on change of each checkbox, set the same position in the containing conditionsList
-  // checked property
-
-  // console.log(conditionsList);
 
   const handleFilters = (filters) => {
     if (filters.length === 0) {
@@ -64,11 +56,6 @@ const Conditions = ({ formData, setFormData, navigation }) => {
         handleFilters={filters => handleFilters(filters)}
       />
       <Box align="start" width="medium">
-        {/* <CheckBox
-          name="example"
-          label="example"
-          onChange={setFormData}
-        ></CheckBox> */}
         { filters.map(filter => {
           return (
             <div>
@@ -78,18 +65,6 @@ const Conditions = ({ formData, setFormData, navigation }) => {
           )
         }) }
       </Box>
-
-      {/* <Heading level={3}>Cardiovascular</Heading>
-      { conditions.filter(isCardiovascular).map(conditionCheckboxes) }
-
-      <Heading level={3}>Gastrointestinal</Heading>
-      { conditions.filter(isGastrointestinal).map(conditionCheckboxes) }
-
-      <Heading level={3}>Psychological</Heading>
-      { conditions.filter(isPsychological).map(conditionCheckboxes) }
-
-      <Heading level={3}>Other</Heading>
-      { conditions.filter(isOther).map(conditionCheckboxes) } */}
 
       <Button
         fill={false}

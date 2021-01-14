@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Filter from '../components/Filter';
 import { Box, Button, CheckBox, Heading } from 'grommet';
 import conditions from './conditions.json';
@@ -18,6 +18,7 @@ const Conditions = ({ formData, setFormData, navigation }) => {
           return b.toLowerCase();
       });
   }
+
   const originalFiltersList = ['Cardiovascular', 'Gastrointestinal', 'Psychological', 'Other'];
   const [filters, setFilters] = useState(originalFiltersList);
   const [conditionsList, setConditionsList] = useState(conditions.map(condition => {
@@ -33,11 +34,6 @@ const Conditions = ({ formData, setFormData, navigation }) => {
   const isPsychological = (condition) =>  { return condition.type === 'psychological' };
   const isOther = (condition) =>  { return condition.type === 'other' };
 
-  useEffect(() => {
-    console.log('conditionsList changed');
-    console.log({conditionsList});
-  }, [conditionsList]);
-
   const handleFilters = (filters) => {
     if (filters.length === 0) {
       setFilters(originalFiltersList);
@@ -47,8 +43,6 @@ const Conditions = ({ formData, setFormData, navigation }) => {
   };
 
   const handleCheck = (e) => {
-    console.log(e.target);
-    console.log(e.target.checked);
     setFormData(e);
     const index = conditionsList.findIndex(condition => condition.name === e.target.name);
     const newConditionsList = [...conditionsList];
